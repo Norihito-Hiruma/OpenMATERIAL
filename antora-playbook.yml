@@ -1,6 +1,6 @@
 site:
-  title: ASAM OpenMATERIAL (GitHub)
-  url: https://my-asam-demo-site.org
+  title: ASAM OpenMATERIAL
+  url: https://asam-ev.github.io/OpenMATERIAL/
   start_page: asamopenmaterial:specification:index.adoc 
 
 content:
