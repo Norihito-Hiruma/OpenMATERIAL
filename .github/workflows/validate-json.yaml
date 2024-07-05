@@ -1,0 +1,18 @@
+# Validate JSON files
+# Source: https://github.com/marketplace/actions/validate-json
+name: Validate Asset JSONs
+
+on: 
+  push:
+    branches: [ main, json-validation-test, antora-test ]
+
+jobs:
+  verify-json-validation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Validate JSON
+        uses: docker://orrosenblatt/validate-json-action:latest
+        env:
+          INPUT_SCHEMA: ./schemas/asset_schema.json
+          INPUT_JSONS: ./examples/example_asset.xoma,./examples/example_material.xomp
