@@ -15,4 +15,4 @@ jobs:
         uses: docker://orrosenblatt/validate-json-action:latest
         env:
           INPUT_SCHEMA: ./schemas/asset_schema.json
-          INPUT_JSONS: ./examples/example_asset.xoma,./examples/example_material.xomp
+          INPUT_JSONS: ./examples/example_asset.xoma,./examples/*.xomp
