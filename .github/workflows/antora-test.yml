@@ -1,6 +1,6 @@
 # This is a minimal working Antora configuration
 # Source: https://docs.antora.org/antora/latest/publish-to-github-pages/ -  Example 2
-name: Publish to GitHub Pages
+name: Antora test
 on:
   push:
     branches: [antora-test, main]
