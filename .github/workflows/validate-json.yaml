@@ -11,13 +11,16 @@ jobs:
   json-schema-validation:
     name: JSON schema validation
     runs-on: ubuntu-latest
+    
     steps:
       - uses: actions/checkout@v1
+      
       - name: Validate "asset" JSONs
         uses: nhalstead/validate-json-action@0.1.3
         with:
           schema: ./schemas/asset_schema.json
           jsons: ./examples/*_asset.xoma
+          
       - name: Validate "material" JSONs
         uses: nhalstead/validate-json-action@0.1.3
         with:
