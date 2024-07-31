@@ -8,7 +8,7 @@ on:
     branches: [ main, json-validation-test, antora-test ]
 
 jobs:
-  verify-json-validation:
+  asset-validation:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -16,5 +16,8 @@ jobs:
         uses: nhalstead/validate-json-action@0.1.3
         with:
           schema: ./schemas/asset_schema.json
-          jsons: ./examples/example_asset.xoma,./examples/*.xomp       
+          jsons: ./examples/*_asset.xoma
+          
+          
+#          ,./examples/*.xomp       
  
