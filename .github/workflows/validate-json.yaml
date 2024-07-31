@@ -1,4 +1,4 @@
-# Validate JSON files
+# Validate JSON schema files
 # Source: https://github.com/nhalstead/validate-json-action
 # Forked from: https://github.com/marketplace/actions/validate-json
 name: Validate JSON schemas for assets and materials
@@ -18,7 +18,9 @@ jobs:
         with:
           schema: ./schemas/asset_schema.json
           jsons: ./examples/*_asset.xoma
+      - name: Validate "material" JSONs
+        uses: nhalstead/validate-json-action@0.1.3
+        with:
+          schema: ./schemas/material_schema.json
+          jsons: ./examples/*_material.xomp
           
-          
-#          ,./examples/*.xomp       
- 
