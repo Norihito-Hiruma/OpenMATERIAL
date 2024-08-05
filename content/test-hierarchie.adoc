@@ -1,6 +1,4 @@
-= First
-
-[plantuml, format=svg, opts="inline"]
+[source,plantuml, format=svg, opts="inline"]
 ----
 skinparam Legend {
 	BackgroundColor transparent
@@ -19,20 +17,10 @@ end legend
 
 == Second
 
-[plantuml, format=svg, opts="inline"]
-----
-skinparam Legend {
-	BackgroundColor transparent
-	BorderColor transparent
-	FontName "Noto Serif", "DejaVu Serif", serif
-	FontSize 17
-}
-legend
-Root
-|_ Element 1
-  |_ Element 1.1
-  |_ Element 1.2
-|_ Element 2
-  |_ Element 2.1
-end legend
-----
+[tree, width=25%, align=left]
+-------------------------
+* Color
+** Red
+** Green
+** Blue
+-------------------------
