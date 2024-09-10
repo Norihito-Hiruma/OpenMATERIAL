@@ -1,4 +1,4 @@
-name: Full Antora documentation build TEST
+name: Full Antora documentation build TEST 2
 # Based on OSI configuration https://github.com/OpenSimulationInterface/osi-documentation/blob/master/.github/workflows/antora-build.yml
 on:
   push:
