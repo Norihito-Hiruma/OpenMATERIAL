@@ -1,4 +1,4 @@
-name: Full Antora documentation build TEST 3
+name: Full Antora documentation build TEST 4
 # Based on OSI configuration https://github.com/OpenSimulationInterface/osi-documentation/blob/master/.github/workflows/antora-build.yml
 on:
   push:
@@ -6,7 +6,10 @@ on:
   pull_request:
     branches: [ main ]
   # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+    workflow_dispatch:
+      branches:
+        - main
+        - antora-test
  
 jobs:
   trigger_antora:
